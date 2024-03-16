@@ -10,7 +10,7 @@ def client(app):
     return app.test_client()
 
 def test_index(app, client):
-    response = client.get('/gfdg')
+    response = client.get('/')
     assert response.status_code == 200
 
 def test_add_todo(client):
